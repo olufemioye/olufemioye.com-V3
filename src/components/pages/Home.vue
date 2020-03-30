@@ -1,5 +1,5 @@
 <template>
-	<main class="layout-main">
+	<div class="page page--home">
 		<div class="layout-container">
 			<div class="page-content">
 				<h1 class="heading">👋🏾</h1>
@@ -10,9 +10,9 @@
 			</div>
 		</div>
 		<div class="page-visual">
-			
+
 		</div>
-	</main>
+	</div>
 </template>
 
 <script>

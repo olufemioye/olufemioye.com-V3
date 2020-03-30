@@ -1,5 +1,5 @@
 <template>
-	<main class="layout-main">
+	<div class="page page--resume">
 		<div class="layout-container">
 			<div class="page-content">
 				<h1 class="heading">Resume</h1>
@@ -9,7 +9,7 @@
 			
 		</div>
 	
-	</main>
+	</div>
 </template>
 
 <script>
