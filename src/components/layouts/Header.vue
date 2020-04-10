@@ -1,5 +1,5 @@
 <template>
-	<header class="header">
+	<header class="header" :class="darkTheme ? 'header--dark' : null">
 		<div class="layout-container">
 			<router-link to="/" class="header__logo-mark">OlufemiOye<span class="text-blue">.com</span></router-link>
 		</div>
@@ -8,7 +8,10 @@
 
 <script>
 export default {
-	name: 'Header'
+	name: 'Header',
+	props: {
+		darkTheme: Boolean
+	}
 }
 </script>
 
@@ -24,6 +27,16 @@ export default {
 		padding: 1rem 0;
 		border-bottom: 1px solid $snow;
 		z-index: $z-index-header;
+
+		&.header--dark {
+			background: transparent;
+			border-bottom-color: $steel;
+
+			.header__logo-mark {
+				color: $white;
+			}
+		}
+
 	}
 
 	.header__logo-mark {

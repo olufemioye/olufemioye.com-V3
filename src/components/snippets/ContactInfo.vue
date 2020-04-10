@@ -1,7 +1,7 @@
 <template>
 	<div class="contact-info">
 		<p class="contact-info__title caption">{{title}}</p>
-		<a :href="url" class="contact-info__link">
+		<a :href="url" class="contact-info__link" target="_blank">
 			<div class="contact-info__icon">
 				<Twitter v-if="icon === 'twitter'" />
 				<Instagram v-else-if="icon === 'instagram'" />

@@ -1,11 +1,11 @@
 <template>
 	<div class="page page--contact">
 		<div class="layout-container">
-			<h1 class="heading">Contact</h1>
-			<p class="paragraph">Got a product idea, or want to say hello? Please feel free to send me an email. Let’s build awesome shit together!</p>
+			<h1 class="heading text-white">Contact</h1>
+			<p class="paragraph text-snow">Got a product idea, or want to say hello? Please feel free to send me an email. Let’s build awesome shit together!</p>
 
-			<p class="caption">Email</p>
-			<a class="cta-link" href="mailto: hello@olufemioye.com">hello@olufemioye.com</a>
+			<p class="caption text-silver">Email</p>
+			<a class="cta-link cta-link--dark" href="mailto: hello@olufemioye.com">hello@olufemioye.com</a>
 			<section class="contact-list">
 				<ContactInfo title="Ramblings" icon="twitter" name="Twitter" url="https://twitter.com/olufemioye" />
 				<ContactInfo title="Photos" icon="instagram" name="Instagram" url="https://instagram.com/olufemioye" />

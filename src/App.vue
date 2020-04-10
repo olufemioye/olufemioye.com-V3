@@ -1,11 +1,11 @@
 <template>
-	<div id="app">
-		<Header />
-		<Navigation />
+	<div id="app" :class="(activeTheme() === 'dark') ? 'app app--dark' : 'app'">
+		<Header :darkTheme="(activeTheme() === 'dark') ? true : false" />
+		<Navigation :activePage="activePage()"/>
 		<main class="layout-main">
 			<router-view></router-view>
 		</main>
-		<Footer />
+		<Footer :darkTheme="(activeTheme() === 'dark') ? true : false" />
 	</div>
 </template>
 
@@ -20,6 +20,14 @@
 			Header,
 			Navigation,
 			Footer
+		},
+		methods: {
+			activeTheme() {
+				return this.$route.meta.theme
+			},
+			activePage() {
+				return this.$route.meta.page
+			}
 		}
 	}
 </script>
@@ -27,20 +35,33 @@
 <style lang="scss">
 	@import "@/assets/scss/style.scss";
 
-	#app {
+	.app {
+		background: $white;
+
+		&.app--dark {
+			background: $black;
+		}
+
 		@include breakpoint-min (lg) {
 			padding-right: 5rem;
 		}
+
 	}
+
 	.page-content {
 		margin-bottom: 5rem;
+
 		@include breakpoint-min (lg) {
 			width: 50%;
+
 			&.page-content--full {
 				width: 100%;
 			}
+
 		}
+
 	}
+
 	.page-visual {
 		background: $snow;
 		padding: 2rem 0;
