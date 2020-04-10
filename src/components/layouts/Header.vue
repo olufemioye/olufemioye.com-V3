@@ -29,7 +29,7 @@ export default {
 		z-index: $z-index-header;
 
 		&.header--dark {
-			background: transparent;
+			background: $black;
 			border-bottom-color: $steel;
 
 			.header__logo-mark {

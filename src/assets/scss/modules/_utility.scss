@@ -1,0 +1,130 @@
+
+// color styles
+.text-blue {
+	color: $theme-blue;
+}
+.text-black {
+	color: $black;
+}
+.text-steel {
+	color: $steel;
+}
+.text-slate {
+	color: $slate;
+}
+.text-silver {
+	color: $silver;
+}
+.text-smoke {
+	color: $smoke;
+}
+.text-snow {
+	color: $snow;
+}
+.text-white {
+	color: $white;
+}
+
+// Background Styles
+.bg-blue {
+	background-color: $theme-blue;
+}
+.bg-black {
+	background-color: $black;
+}
+.bg-steel {
+	background-color: $steel;
+}
+.bg-slate {
+	background-color: $slate;
+}
+.bg-silver {
+	background-color: $silver;
+}
+.bg-smoke {
+	background-color: $smoke;
+}
+.bg-snow {
+	background-color: $snow;
+}
+.bg-white {
+	background-color: $white;
+}
+
+
+// Padding
+.padding-0 {
+	padding: 0 !important;
+}
+.padding-b-xs {
+	padding-bottom: 1rem;
+}
+.padding-b-sm {
+	padding-bottom: 1.25rem;
+}
+.padding-b-md {
+	padding-bottom: 2rem;
+}
+.padding-b-lg {
+	padding-bottom: 4rem;
+}
+.padding-b-xl {
+	padding-bottom: 5rem;
+}
+
+@include breakpoint-min(lg) {
+	.padding-b-xs {
+		padding-bottom: 1.5rem;
+	}
+	.padding-b-sm {
+		padding-bottom: 2rem;
+	}
+	.padding-b-md {
+		padding-bottom: 3rem;
+	}
+	.padding-b-lg {
+		padding-bottom: 5rem;
+	}
+	.padding-b-xl {
+		padding-bottom: 7.5rem;
+	}
+}
+
+
+// Margin
+.margin-0 {
+	margin: 0 !important;
+}
+.margin-b-xs {
+	margin-bottom: 1rem;
+}
+.margin-b-sm {
+	margin-bottom: 1.25rem;
+}
+.margin-b-md {
+	margin-bottom: 2rem;
+}
+.margin-b-lg {
+	margin-bottom: 4rem;
+}
+.margin-b-xl {
+	margin-bottom: 5rem;
+}
+
+@include breakpoint-min(lg) {
+	.margin-b-xs {
+		margin-bottom: 1.5rem;
+	}
+	.margin-b-sm {
+		margin-bottom: 2rem;
+	}
+	.margin-b-md {
+		margin-bottom: 3rem;
+	}
+	.margin-b-lg {
+		margin-bottom: 5rem;
+	}
+	.margin-b-xl {
+		margin-bottom: 7.5rem;
+	}
+}

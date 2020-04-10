@@ -1,10 +1,10 @@
 <template>
-	<div class="page page--resume">
-		<div class="layout-container">
-			<div class="page-content">
+	<div class="page page--grid">
+		<section class="page-content">
+			<div class="page-content__container">
 				<h1 class="heading">Resume</h1>
-				<p class="paragraph text-steel mb-4">I have over 4 years of experience in building world-class digital products that help people and businesses succeed.</p>
-				<section>
+				<p class="paragraph text-steel margin-b-lg">I have over 4 years of experience in building world-class digital products that help people and businesses succeed.</p>
+				<section class="margin-b-lg">
 					<h4 class="sub-heading">Work Experience</h4>
 					<Timeline date="Mar. 2020 - Present" 
 										role="Front-end Developer | VC4A"
@@ -25,9 +25,10 @@
 				</section>
 				
 			</div>
-			
-		</div>
-	
+		</section>
+		<section class="page-visual">
+
+		</section>
 	</div>
 </template>
 

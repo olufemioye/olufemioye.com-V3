@@ -1,0 +1,51 @@
+// Page Styling
+
+.page {
+	position: relative;
+}
+
+.page-content {
+	padding: 3.5rem 0;
+}
+
+.page-content__container {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.page-visual {
+	background: $snow;
+	padding: 1rem;
+}
+
+
+@include breakpoint-min (lg) {
+	.page-content {
+		padding: 4.5rem 0;
+	}
+
+	.page-content__container {
+		max-width: 540px;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		box-sizing: content-box;
+	}
+
+	.page--grid {
+		display: grid;
+		grid-template-columns: 60% 40%;
+		
+		.page-content__container {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.page-visual {
+		height: 100vh;
+		position: sticky;
+		top: 0;
+		z-index: $z-index-visual;
+		margin-top: -89px;
+	}
+}

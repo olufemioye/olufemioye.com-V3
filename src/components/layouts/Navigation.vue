@@ -71,10 +71,6 @@ export default {
 
 	.navigation__links {
 		display: flex;
-		position: fixed;
-		height: 100%;
-		top: 0;
-		right: -3.5rem;
 		flex-direction: column;
 		list-style: none;
 		padding: 0;
@@ -126,6 +122,10 @@ export default {
 			display: block;
 		}
 		.navigation__links {
+			position: fixed;
+			height: 100%;
+			top: 0;
+			right: -3.5rem;
 			padding-top: 5.5rem;
 		}
 		.navigation--active {
@@ -142,8 +142,10 @@ export default {
 	// Desktop Navigation
 	@include breakpoint-min (lg) {
 		.navigation__links {
-			right: 0;
-			justify-content: center;
+			position: sticky;
+			top: 0;
+			padding-top: 9.6875rem;
+			height: 100vh;
 		}
 		.navigation__link {
 			padding: 1.5rem;

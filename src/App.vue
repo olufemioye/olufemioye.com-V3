@@ -1,11 +1,11 @@
 <template>
 	<div id="app" :class="(activeTheme() === 'dark') ? 'app app--dark' : 'app'">
-		<Header :darkTheme="(activeTheme() === 'dark') ? true : false" />
-		<Navigation :activePage="activePage()"/>
-		<main class="layout-main">
+		<Header class="app-header" :darkTheme="(activeTheme() === 'dark') ? true : false" />
+		<Navigation class="app-navigation" :activePage="activePage()"/>
+		<main class="layout-main app-main">
 			<router-view></router-view>
 		</main>
-		<Footer :darkTheme="(activeTheme() === 'dark') ? true : false" />
+		<Footer class="app-footer" :darkTheme="(activeTheme() === 'dark') ? true : false" />
 	</div>
 </template>
 
@@ -36,55 +36,50 @@
 	@import "@/assets/scss/style.scss";
 
 	.app {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: 
+			"header"
+			"main"
+			"footer";
 		background: $white;
 
 		&.app--dark {
 			background: $black;
 		}
 
-		@include breakpoint-min (lg) {
-			padding-right: 5rem;
+		@include breakpoint-min(lg) {
+			grid-template-columns: 1fr 5rem;
+			grid-template-areas: 
+				"header navigation"
+				"main navigation"
+				"footer navigation";
 		}
 
 	}
 
-	.page-content {
-		margin-bottom: 5rem;
+	.app-header {
+		grid-area: header;
+	}
 
+	.app-navigation {
+		grid-area: navigation;
+	}
+
+	.app-main {
+		grid-area: main;
+		min-height: calc(100vh - 101px);
+		
 		@include breakpoint-min (lg) {
-			width: 50%;
-
-			&.page-content--full {
-				width: 100%;
-			}
-
+			min-height: calc(100vh - 146px);
 		}
 
 	}
 
-	.page-visual {
-		background: $snow;
-		padding: 2rem 0;
-		text-align: center;
-
-		@include breakpoint-min (lg) {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			position: fixed;
-			right: 5rem;
-			top: 0;
-			width: 100%;
-			max-width: 480px;
-			height: 100%;
-			padding: 3rem 1rem;
-			z-index: $z-index-visual;
-		}
-		@include breakpoint-min (xl) {
-			max-width: 520px;
-		}
-		@media (min-width: 1400px) {
-			max-width: 600px;
-		}
+	.app-footer {
+		grid-area: footer;
 	}
+
+
 </style>

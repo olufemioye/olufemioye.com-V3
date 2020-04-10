@@ -12,24 +12,8 @@
 	margin-left: auto;
 	margin-right: auto;
 
-	@include breakpoint-min (sm) {
-		max-width: 540px;
-	}
-	@include breakpoint-min (md) {
-		max-width: 720px;
-	}
 	@include breakpoint-min (lg) {
-		max-width: 960px;
-	}
-	@include breakpoint-min (xl) {
-		max-width: 1140px;
-	}
-}
-
-.layout-main {
-	min-height: calc(100vh - 101px);
-	padding-top: 3.5rem;
-	@include breakpoint-min (lg) {
-		min-height: calc(100vh - 146px);
+		padding-left: calc( (60% - 540px) / 2 );
+		padding-right: calc( (60% - 540px) / 2 );
 	}
 }

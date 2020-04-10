@@ -62,7 +62,12 @@ export default {
 		padding: .5rem 0;
 		text-decoration: none;
 		color: $white;
-		background: $steel;
+		background: rgba($steel, .5);
+		transition: background-color .5s ease;
+		
+		&:hover {
+			background: $steel;
+		}
 	}
 
 	.contact-info__name {
