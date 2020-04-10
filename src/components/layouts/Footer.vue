@@ -37,6 +37,10 @@ export default {
 		}
 
 		@include breakpoint-min (lg) {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
 			padding: 1rem 0;
 			background: $white;
 			border-top-color: $snow;

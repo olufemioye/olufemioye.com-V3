@@ -1,7 +1,7 @@
 <template>
 	<div class="page">
 		<div class="layout-container">
-			<div class="page-content">
+			<div class="page-content bg-black">
 				<div class="page-content__container padding-0 margin-b-lg">
 					<h1 class="heading text-white">Contact</h1>
 					<p class="paragraph text-snow">Got a product idea, or want to say hello? Please feel free to send me an email. Let’s build awesome shit together!</p>

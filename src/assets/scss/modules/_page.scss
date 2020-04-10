@@ -6,6 +6,8 @@
 
 .page-content {
 	padding: 3.5rem 0;
+	background: $white;
+	z-index: 5;
 }
 
 .page-content__container {
@@ -24,6 +26,7 @@
 @include breakpoint-min (lg) {
 	.page-content {
 		padding: 4.5rem 0;
+		margin-bottom: 57px;
 	}
 
 	.page-content__container {
@@ -47,10 +50,11 @@
 		min-height: 100vh;
 		z-index: $z-index-visual;
 		margin-top: -89px;
+		padding-top: 4.125rem;
 	}
 
 	.page-visual__container {
-		padding-top: 9.6875rem;
+		padding-top: 89px;
 		position: sticky;
 		top: 0;
 	}
