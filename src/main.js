@@ -2,7 +2,11 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './App.vue';
 
-Vue.use(VueRouter);
+// Global components
+import CTA from '@/components/snippets/CTA';
+Vue.component('CTA', CTA);
+
+//Routes
 
 const routes = [
   {
@@ -36,6 +40,8 @@ const routes = [
   }
 ]
 
+// Router
+Vue.use(VueRouter);
 const router = new VueRouter({
   mode: 'history',
   routes
