@@ -27,18 +27,22 @@
 			</div>
 		</section>
 		<section class="page-visual">
-
+			<div class="page-visual__container">
+				<ResumeEnvelope />
+			</div>
 		</section>
 	</div>
 </template>
 
 <script>
 	import Timeline from "@/components/snippets/Timeline.vue";
+	import ResumeEnvelope from "@/components/snippets/ResumeEnvelope";
 
 	export default {
 		name: 'Resume',
 		components: {
-			Timeline
+			Timeline,
+			ResumeEnvelope
 		}
 	}
 </script>

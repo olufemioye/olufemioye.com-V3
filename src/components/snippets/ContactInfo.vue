@@ -57,16 +57,31 @@ export default {
 	}
 
 	.contact-info__link {
+		position: relative;
 		display: flex;
 		align-items: center;
 		padding: .5rem 0;
 		text-decoration: none;
 		color: $white;
-		background: rgba($steel, .5);
-		transition: background-color .5s ease;
+		background-color: rgba($steel, .5);
+		z-index: 1;
+		&::after {
+				content: '';
+				position: absolute;
+				z-index: -1;
+				width: 0;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: $steel;
+				transition: width .5s ease;
+			}
 		
 		&:hover {
-			background: $steel;
+			&::after {
+				content: '';
+				width: 100%;
+			}
 		}
 	}
 
@@ -96,6 +111,7 @@ export default {
 			
 			svg {
 				height: 1.25rem;
+				width: 1.25rem;
 			}
 		}
 

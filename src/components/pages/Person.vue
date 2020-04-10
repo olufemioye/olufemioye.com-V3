@@ -18,8 +18,8 @@
 			</div>
 		</section>
 		<section class="page-visual">
-			<p class="caption text-silver">Latest from my Instagram</p>
-			<div class="layout-container">
+			<div class="page-visual__container">	
+				<p class="caption text-silver text-center margin-b-xs">Latest from my Instagram</p>
 				<InstagramFeed />
 			</div>
 		</section>

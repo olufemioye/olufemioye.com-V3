@@ -15,9 +15,11 @@
 
 .page-visual {
 	background: $snow;
-	padding: 1rem;
+	
 }
-
+.page-visual__container {
+	padding: 2rem 1rem;
+}
 
 @include breakpoint-min (lg) {
 	.page-content {
@@ -42,10 +44,14 @@
 	}
 
 	.page-visual {
-		height: 100vh;
-		position: sticky;
-		top: 0;
+		min-height: 100vh;
 		z-index: $z-index-visual;
 		margin-top: -89px;
+	}
+
+	.page-visual__container {
+		padding-top: 9.6875rem;
+		position: sticky;
+		top: 0;
 	}
 }

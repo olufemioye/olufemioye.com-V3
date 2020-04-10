@@ -23,13 +23,14 @@ export default {
 		display: block;
 		position: sticky;
 		top: 0;
-		background: $white;
+		background: rgba($white, .9);
+		backdrop-filter: saturate(160%) blur(8px);
 		padding: 1rem 0;
 		border-bottom: 1px solid $snow;
 		z-index: $z-index-header;
 
 		&.header--dark {
-			background: $black;
+			background: rgba($black, .9);
 			border-bottom-color: $steel;
 
 			.header__logo-mark {

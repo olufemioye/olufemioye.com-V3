@@ -23,6 +23,9 @@
 </script>
 
 <style lang="scss" scoped>
+	@import "@/assets/scss/modules/_variables.scss";
+	@import "@/assets/scss/modules/_responsive.scss";
+
 	.instagram-feed {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -35,5 +38,12 @@
 	}
 	.instagram-feed__img {
 		width: 100%;
+	}
+	@include breakpoint-min (lg) {
+		.instagram-feed {
+			max-width: 540px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 </style>
