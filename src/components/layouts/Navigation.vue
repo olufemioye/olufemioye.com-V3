@@ -2,8 +2,29 @@
 	<nav :class=" isActive ? 'navigation navigation--active' : 'navigation' ">
 		<NavigationMenu :isOpen="isActive" @clickMenu="toggleNavigation()" />
 		<ul class="navigation__links">
-			<li v-for="link in navigationLinks" :key="link.index">
-				<router-link :to="link.url" :class="link.isActive ? 'navigation__link navigation__link--active' : 'navigation__link'" @click.native="toggleNavigation()">{{ link.name }}</router-link>
+			<li>
+				<router-link to="/" 
+					:class="(activePage === 'Home') ? 'navigation__link navigation__link--active' : 'navigation__link'" 
+					@click.native="toggleNavigation()" >Home
+				</router-link>
+			</li>
+			<li>
+				<router-link to="/resume" 
+					:class="(activePage === 'Resume') ? 'navigation__link navigation__link--active' : 'navigation__link'" 
+					@click.native="toggleNavigation()" >Resume
+				</router-link>
+			</li>
+			<li>
+				<router-link to="/person" 
+					:class="(activePage === 'Person') ? 'navigation__link navigation__link--active' : 'navigation__link'" 
+					@click.native="toggleNavigation()" >Person
+				</router-link>
+			</li>
+			<li>
+				<router-link to="/contact" 
+					:class="(activePage === 'Contact') ? 'navigation__link navigation__link--active' : 'navigation__link'" 
+					@click.native="toggleNavigation()" >Contact
+				</router-link>
 			</li>
 		</ul>
 		<div class="navigation__overlay" @click="toggleNavigation()"></div>
@@ -20,50 +41,14 @@ export default {
 	props: {
 		activePage: String
 	},
+	data() {
+		return {
+			isActive: false
+		}
+	},
 	methods: {
 		toggleNavigation() {
 			this.isActive = !this.isActive;
-		},
-		changeActiveLink() {
-			if (this.activePage === "Home") {
-				this.navigationLinks[0].isActive = true;
-			}
-			else if (this.activePage === "Resume") {
-				this.navigationLinks[1].isActive = true;
-			} 
-			else if (this.activePage === "Person") {
-				this.navigationLinks[2].isActive = true;
-			} 
-			else if (this.activePage === "Contact") {
-				this.navigationLinks[3].isActive = true;
-			}
-		}
-	},
-	data() {
-		return {
-			isActive: false,
-			navigationLinks: [
-				{
-					name: "Home",
-					url: "/",
-					isActive: false
-				},
-				{
-					name: "Resume",
-					url: "/resume",
-					isActive: false
-				},
-				{
-					name: "Person",
-					url: "/person",
-					isActive: false
-				},
-				{
-					name: "Contact",
-					url: "/contact",
-					isActive: false
-				},
-			]
 		}
 	}
 }
