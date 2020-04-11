@@ -131,6 +131,10 @@ export default {
 			top: 0;
 			right: -3.5rem;
 			padding-top: 5.5rem;
+
+			li {
+				width: 3.5rem;
+			}
 		}
 		.navigation--active {
 			.navigation__links {
