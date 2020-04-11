@@ -15,9 +15,10 @@ body {
 	font-weight: $font-weight-regular;
 
 	::selection {
-		background: $theme-blue;
-		color: $white;
+		background: rgba($theme-blue, .25);
 	}
+
+	cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAmSURBVHgB7cxBAQAABATBo4FgempJiPt47ASYqJ6VIWUiICD4EhxzOQIlcD5MeQAAAABJRU5ErkJggg=='), auto;
 }
 
 //Typography

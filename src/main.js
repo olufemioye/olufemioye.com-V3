@@ -2,12 +2,16 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './App.vue';
 
+// Animation on Scroll Library
+import AOS from 'aos';
+import "aos/dist/aos.css";
+
 // Global components
 import CTA from '@/components/snippets/CTA';
 Vue.component('CTA', CTA);
 
-//Routes
 
+//Routes
 const routes = [
   {
     path: '/',
@@ -53,6 +57,11 @@ const router = new VueRouter({
 Vue.config.productionTip = false;
 
 new Vue({
+  created() {
+    AOS.init({
+      once: true
+    })
+  },
   router,
   render: h => h(App),
 }).$mount('#app')

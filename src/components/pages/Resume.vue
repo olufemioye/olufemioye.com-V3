@@ -2,9 +2,9 @@
 	<div class="page page--grid">
 		<section class="page-content">
 			<div class="page-content__container">
-				<h1 class="heading">Resume</h1>
-				<p class="paragraph text-steel margin-b-lg">I have over 4 years of experience in building world-class digital products that help people and businesses succeed.</p>
-				<section class="margin-b-lg">
+				<h1 class="heading" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Resume</h1>
+				<p class="paragraph text-steel margin-b-lg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">I have over 4 years of experience in building world-class digital products that help people and businesses succeed.</p>
+				<section class="margin-b-lg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
 					<h4 class="sub-heading">Work Experience</h4>
 					<Timeline date="Mar. 2020 - Present" 
 										role="Front-end Developer | VC4A"
@@ -26,7 +26,7 @@
 				
 			</div>
 		</section>
-		<section class="page-visual">
+		<section class="page-visual" data-aos="fade" data-aos-duration="1200" data-aos-delay="800">
 			<div class="page-visual__container">
 				<ResumeEnvelope />
 			</div>

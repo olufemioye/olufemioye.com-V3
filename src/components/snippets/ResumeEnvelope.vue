@@ -1,5 +1,5 @@
 <template>
-	<a href="https://bit.ly/2EjuVlY" class="resume-envelope" target="_blank">
+	<a href="https://bit.ly/2EjuVlY" class="resume-envelope" target="_blank" title="Download Resume">
 		<div class="resume-envelope__back"></div>
 		<div class="resume-paper"></div>
 		<div class="resume-envelope__front">
@@ -51,6 +51,7 @@ export default {
 				top: 0rem;
 				animation: none;
 			}
+			cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGKSURBVHgB7doxS8NAFMDxd1ZFrSAOJoPY4uRgXHWwizgIgpsg8Uu4qaOLYjoJ4meoazu4Ozi414/g4iA4ODmc94JK1KBtePfCa98fCoFwBz96vVxpzezOtYXBzY7AgKdA6SlQegqUngKlp0DpsQEb0Rw8d/bS13oUAFf6DkpPgdJToPQUKD0FSk+B0lOg9MiBtaAKRZupjgF1pMCrg1XonG0UQtbdmNuLLbh0c1BGBtxem4d4czHF9YtEXPvUjQmrsO/mwLmoIgPe3D/Ceeshvf5E1ntAZnFY4ubAuagiXaLNVvcbsv0P8icOx+IclJFvMr0iOXCYl8dEHnIhnP66XwunWHCY8fkL72EcwXG8nF6/vL7lPgZ84ly2Mrm0ewKeuus+gQUDjZUAJsYrv+57xqV5P8lkl2s2DhzGclRDSJJBJkw4bBSYSjKghAmHGf0bifD6XqJHH9t+GeFSa+ZsWH9VABhBWVnLALQFP7HGQCnpJiM9BUpPgdJToPQUKL2h+DbBdVQr5TT6DoYKgX4kr4bVAAAAAElFTkSuQmCC'), auto;
 		}
 	}
 

@@ -48,7 +48,11 @@ export default {
 	},
 	methods: {
 		toggleNavigation() {
-			this.isActive = !this.isActive;
+			if(window.innerWidth > 992) {
+				return false;
+			} else {
+				this.isActive = !this.isActive;
+			}
 		}
 	}
 }
