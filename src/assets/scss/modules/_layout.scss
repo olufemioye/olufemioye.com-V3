@@ -1,0 +1,19 @@
+// Layout Styling
+@import "./responsive";
+
+* {
+	box-sizing: border-box;
+}
+
+.layout-container {
+	width: 100%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include breakpoint-min (lg) {
+		padding-left: calc( (60% - 540px) / 2 );
+		padding-right: calc( (60% - 540px) / 2 );
+	}
+}

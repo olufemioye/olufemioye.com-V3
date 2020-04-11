@@ -1,0 +1,97 @@
+// COLOR & TYPOGRAPHY STYLES
+
+@import "./variables";
+@import "./responsive";
+
+
+// Rubik from Google Fonts.
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+html,
+body {
+	color: $black;
+	font-family: $font-family-rubik, $font-family-fallback;
+	font-size: 16px;
+	font-weight: $font-weight-regular;
+
+	::selection {
+		background: rgba($theme-blue, .25);
+	}
+
+	cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAmSURBVHgB7cxBAQAABATBo4FgempJiPt47ASYqJ6VIWUiICD4EhxzOQIlcD5MeQAAAABJRU5ErkJggg=='), auto;
+}
+
+//Typography
+.heading {
+	font-weight: $font-weight-bold;
+	font-size: $font-size-xxl;
+	line-height: 1.25;
+	margin-top: 0;
+	margin-bottom: 1.25rem;
+}
+
+.sub-heading {
+	font-weight: $font-weight-medium;
+	font-size: $font-size-l;
+	line-height: 1.5;
+	margin-top: 0;
+	margin-bottom: 1.25rem;
+}
+
+p,
+.paragraph {
+	font-size: $font-size-m;
+	font-weight: $font-weight-regular;
+	line-height: 1.75;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+small,
+.small {
+	font-size: $font-size-s;
+	font-weight: $font-weight-regular;
+	line-height: 1.5;
+}
+
+.caption {
+	font-size: $font-size-xs;
+	font-weight: $font-weight-medium;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-top: 0;
+	margin-bottom: .75rem;
+}
+
+
+// desktop typography
+@include breakpoint-min (lg) {
+	.heading {
+		font-size: $font-size-xxxl;
+		margin-bottom: 1.5rem;
+	}
+	
+	.sub-heading {
+		font-size: $font-size-xl;
+		margin-bottom: 1.5rem;
+	}
+	
+	p,
+	.paragraph {
+		font-size: $font-size-l;
+		margin-bottom: 1.25rem;
+	}
+	
+	small,
+	.small {
+		font-size: $font-size-m;
+		font-weight: $font-weight-regular;
+	}
+	
+	.caption {
+		font-size: $font-size-s;
+		margin-bottom: 1rem;
+	}
+
+}
