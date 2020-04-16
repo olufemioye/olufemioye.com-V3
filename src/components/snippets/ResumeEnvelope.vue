@@ -1,5 +1,5 @@
 <template>
-	<a href="https://bit.ly/2EjuVlY" class="resume-envelope" target="_blank" title="Download Resume">
+	<a href="https://bit.ly/olufemioye-resume" class="resume-envelope" target="_blank" title="Download Resume">
 		<div class="resume-envelope__back"></div>
 		<div class="resume-paper"></div>
 		<div class="resume-envelope__front">
