@@ -7,8 +7,8 @@
 				<section class="margin-b-lg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
 					<h4 class="sub-heading">Work Experience</h4>
 					<Timeline date="Mar. 2020 - Present" 
-										role="Front-end Developer | VC4A"
-										description="Connecting enterpreneurs with Investors with Frontend Development and UX Design."  />
+										role="UX Developer | VC4A"
+										description="Connecting enterpreneurs with investors with code and design."  />
 					<Timeline date="Feb. 2018 - Mar. 2020" 
 										role="Product Designer | REACH"
 										description="Designed tools and solutions that helps millennials understand, borrow and invest money." />
