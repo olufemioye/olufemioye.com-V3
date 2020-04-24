@@ -10,10 +10,10 @@
 					90s baby. Based in Lagos, Nigeria.
 				</p>
 				<p class="paragraph text-steel" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-					Music Junkie, art and travel enthusiat. I take my sleep and food pretty serious.
+					Music Junkie, art and travel enthusiast. I take my sleep and food pretty serious.
 				</p>
 				<p class="paragraph text-steel" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
-					I really like building things, I like watching things grow from ground up. Currently I am using my knowledge in design and code to build better and meaniful digital experiences. I have an interest in building businesses at scale.
+					I really like building things, I like watching things grow from ground up. Currently I am using my knowledge in design and code to build better and meaningful digital experiences. I have an interest in building businesses at scale.
 				</p>
 			</div>
 		</section>

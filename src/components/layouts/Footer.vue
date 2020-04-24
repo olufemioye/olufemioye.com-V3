@@ -34,6 +34,7 @@ export default {
 			background: transparent;
 			color: $smoke;
 			border-top-color: $steel;
+			position: relative;
 		}
 
 		@include breakpoint-min (lg) {
