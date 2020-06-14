@@ -12,12 +12,14 @@
 		name: 'InstagramFeed',
 		data() {
 			return {
-				instagramData: null
+				instagramData: null,
+				accessToken: '302493035.20cd535.495b1e5141ea40bf9937829f15180de3',
+				count: 9
 			}
 		},
 		mounted() {
-			axios.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=302493035.20cd535.20dbac4ab0384cd99b4edb8e99b8f1f8')
-			.then( response => (this.instagramData = response.data.data.slice(0,9) ) )
+			axios.get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=${this.accessToken}&count=${this.count}`)
+			.then( response => (this.instagramData = response.data.data ) )
 		}
 	}
 </script>
