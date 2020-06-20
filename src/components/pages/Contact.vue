@@ -6,7 +6,7 @@
 					<h1 class="heading text-white" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Contact</h1>
 					<p class="paragraph text-snow" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">Got a product idea, or want to say hello? Please feel free to send me an email. Let’s build awesome shit together!</p>
 				</div>
-				<CTA data-aos="fade-up" data-aos-duration="600" data-aos-delay="500" class="margin-b-xl" caption="Email" :dark-theme="true" />
+				<CTA data-aos="fade-up" data-aos-duration="600" data-aos-delay="500" class="margin-b-xl" caption="Email" captionClass="text-silver" :dark-theme="true" />
 				
 				<section class="contact-list" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
 					<ContactInfo title="Ramblings" icon="twitter" name="Twitter" url="https://twitter.com/olufemioye" />

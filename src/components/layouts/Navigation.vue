@@ -1,5 +1,6 @@
 <template>
-	<nav :class=" isActive ? 'navigation navigation--active' : 'navigation' ">
+	<nav id="navigation" :class=" isActive ? 'navigation navigation--active' : 'navigation' "
+				aria-labelledby="navigationMenu">
 		<NavigationMenu :isOpen="isActive" @clickMenu="toggleNavigation()" />
 		<ul class="navigation__links">
 			<li>

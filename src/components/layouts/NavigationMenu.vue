@@ -1,7 +1,8 @@
 <template>
-	<button :class="(isOpen) ? 'navigation-menu navigation-menu--active' : 'navigation-menu'" @click="clickReciever()" type="button">
-		<span class="navigation-menu__box">
-			<span class="navigation-menu__inner"></span>
+	<button id="navigationMenu" :class="(isOpen) ? 'navigation-menu navigation-menu--active' : 'navigation-menu'" @click="clickReceiver()" type="button"
+					aria-label="Navigation Menu" aria-haspopup="true" aria-controls="navigation">
+		<span class="navigation-menu__box" aria-hidden="true">
+			<span class="navigation-menu__inner" aria-hidden="true"></span>
 		</span>
 	</button>
 </template>
@@ -13,7 +14,7 @@ export default {
 		isOpen: Boolean
 	},
 	methods: {
-		clickReciever() {
+		clickReceiver() {
 			this.$emit('clickMenu');
 		}
 	}

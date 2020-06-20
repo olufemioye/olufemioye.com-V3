@@ -26,7 +26,7 @@ export default {
 
 	.cta__caption {
 		margin-bottom: .75rem;
-		color: $silver;
+		color: $slate;
 	}
 
 	.cta__link {
